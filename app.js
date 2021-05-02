@@ -3,14 +3,10 @@ document.addEventListener('DOMContentLoaded' , () => {
     //card array
 
     const cardArray = [ 
-        {
-
-        name: 'purple',
-        img: 'images/purple.png'
+        { name: 'purple',
+          img: 'images/purple.png'
     },
-    {
-
-        name: 'pink',
+    {   name: 'pink',
         img: 'images/pink.png'
     },
 
@@ -32,8 +28,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         img: 'images/rose'
     },
     {
-
-        name: 'purple',
+    name: 'purple',
         img: 'images/purple.png'
     },
     {
@@ -65,7 +60,7 @@ cardArray.sort(() => 0.5 - Math.random())
 
 const grid = document.querySelector('.grid')
 
-const results = document.querySelector('#result')
+const resultDisplay = document.querySelector('#result')
 
 let cardChosen = []
 let cardChosenID = []
@@ -86,7 +81,7 @@ function createBoard() {
  
 function checkForMatch () {
     const cards = document.querySelectorAll('img')
-    const optionOneId = cardChosenId[0]
+    const optionOneId = cardChosenID[0]
     const optionTwoId = cardChosenID[1]
 
     if (optionOneId == optionTwoId) {
